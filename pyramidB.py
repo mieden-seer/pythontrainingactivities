@@ -1,24 +1,17 @@
 def pyramidB(x):
-	num_space = x - 1
-	num_one = 1
-	space = ""
-	one = ""
 	line = ""
+	
+	for num in xrange(0, x):
+		space = ""
+		one = ""
 
-	for num in xrange(1, x + 1):
-		for s in xrange(num_space):
+		for s in xrange(x - num):
 			space += " "
 
-		for o in xrange(num_one):
+		for o in xrange(num + 1):
 			one += "1 "
 
 		line = space + one
 		print line
 
-		space = ""
-		one = ""
-
-		num_space -= 1
-		num_one += 1
-
-pyramidB(2)
+pyramidB(5)
