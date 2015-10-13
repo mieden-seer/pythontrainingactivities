@@ -9,7 +9,7 @@ def pyramidA(x):
 			space += " "
 
 		for o in xrange(num + num + 1):
-			one += "1 "
+			one += "1"
 
 		line = space + one
 		print line
